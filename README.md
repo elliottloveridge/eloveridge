@@ -1,2 +1,2 @@
 # eloveridge
-personal website hosted by firebase (Loveridge.com)
+personal website hosted by firebase (eloveridge.com)
