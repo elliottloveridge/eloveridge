@@ -8,13 +8,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>This. That. Flamingo.</title>
+  <title>Elliott Loveridge - Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,51 +26,98 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo-short.png" alt="" width="28" height="28"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#services">projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Elliott Loveridge</h1>
-      <p class="lead">Data Science Student</p>
-    </div>
-  </header>
+  <div class="container">
+    <header id="top-container">
+      <a>
+        <a class="btn btn-social-icon btn-github" href="https://github.com/elliottloveridge-uob" target="_blank">
+          <span class="fa fa-github"></span>
+        </a>
+        <a class="btn btn-social-icon btn-linkedin" href="https://linkedin.com/in/elliott-loveridge-20088a160" target="_blank">
+          <span class="fa fa-linkedin"></span>
+        </a>
+        <button class="btn btn-primary bg-white border-white">
+          <a class="text-dark align-top" href="files/Elliott-Loveridge-CV.pdf" target="_blank" download="Elliott-Loveridge-CV">résumé</a>
+        </button>
+      </a> 
+      
+      <div class="row">
+        <div class="col-md-6 my-auto">
+          <h1>Hi! I'm <span><mark  id="mark-pink">Elliott&nbsp;Loveridge</mark></span>
+            <p>a <a href="" class="typewrite" data-period="2000"
+              data-type='["Data Scientist", "Dog Lover"]'>
+              <span class="wrap"></span>
+            </a></p>
+          </h1>
+          <!-- <div class="top text-center">
+            <img src="img/github.png" alt="" width="20" height="20" class="head-a">
+            <img src="img/github.png" alt="" width="20" height="20" class="head-a">
+            <img src="img/github.png" alt="" width="20" height="20" class="head-a">
+          </div> -->
+        </div>
 
-  <section id="about">
+        <div class="text-center col-md-6">
+
+          <img src="img/main.png" alt="add this" width="350" height="200">
+
+          <!-- <div class="top">
+            <a class="text-dark" href="files/Elliott-Loveridge-CV.pdf" download="Elliott-Loveridge-CV">download résumé</a>
+          </div> -->
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </header>
+  </div>
+
+
+  <section id="about" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <h2>about me</h2>
+          <p class="lead">I'm an MSc Data Science student currently writing my dissertation. Hire me! </p>
+          <h5 class="top"><img src="img/edu.png" alt="" width="24" height="24" class="align-top"> education</h5>
           <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Clickable nav links that smooth scroll to page sections
+              <ul>
+                <li>Another thing</li>
+              </ul>
+            </li>
+
             <li>Responsive behavior when clicking nav links perfect for a one page website</li>
             <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
             <li>Minimal custom CSS so you are free to explore your own unique design options</li>
           </ul>
+
+          <h5 class="top align-top"><img src="img/work.png" alt="" width="20" height="20" class="align-top"> careers</h5>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -78,7 +128,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
