@@ -3,5 +3,5 @@
 
 [Live Version](https://eloveridge.com)
 
-[Beta Version](https://elliottloveridge-uob.github.io/test-website/)
+[Beta Version](https://elliottloveridge.github.io/test-website/)
 
