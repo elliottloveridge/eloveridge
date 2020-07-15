@@ -67,8 +67,7 @@ node_modules/
 # firebase files
 .firebaserc
 .firebase
-# FIXME: removed below to allow firebase sync
-# firebase.json
+firebase.json
 
 # Mac folder files
 .DS_Store
