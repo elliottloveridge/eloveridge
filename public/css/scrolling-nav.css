@@ -1,9 +1,17 @@
+/* .masthead {
+  padding: 156px 0 100px;
+  background-image: url("img/main-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
 header {
-  padding: 0px 0 100px;
+  padding: 130px 0 100px;
 }
 
 section {
-  /* padding-top: 50px; */
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -16,17 +24,110 @@ section {
 }
 
 .top {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .head-a {
   margin-right: 10px;
 }
 
-#top-container{
+.head-link{
   margin-bottom: 20px;
-  margin-top: px;
+  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+body {
+  /* padding-top: 40px; */
+  margin-top: 20px;
+}
+
+.carousel-controller {
+    filter: invert(100%);
+}
+
+/* social link line in the contact me section */
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: red;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.sticky-top {
+  padding-top: 40px;
+}
+
+
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  /* nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  } */
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+ 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-mob
+{
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+}
+
+
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+}

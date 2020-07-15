@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MNIST handwritten digit project that looks to explain concepts of deep learning">
+    <meta name="author" content="Elliott Loveridge">
+
+    <title>Elliott Loveridge - MNIST</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- code embed -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/styles/default.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" role="main">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html#page-top"><img src="img/logo.png" alt=""
+                    width="28" height="28"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <header>
+            <h3 data-toc-skip><span>MNIST for Computer Vision</span></h3>
+            <hr>
+            <h5 data-toc-skip class="text-muted">Updated 29th June 2020</h5>
+        </header>
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-2">
+                <nav id="toc" data-spy="affix" data-toggle="toc" class="sticky-top sticky-offset nav-stacked nav" role="sub"></nav>
+            </div>
+            <!-- main content area -->
+            <div class="col-sm-10">
+                <p class="lead">The MNIST dataset, comprising of handwritten digits from 0-9 is often used as an examplar for deep learning.
+                This project will focus on the implementation and evaluation of the principles of deep learning, initially looking at perceptrons
+                before introducing more complex networks and auto-encoders.
+                </p>
+
+                <h3>The Dataset</h3>
+                
+                <p>Before implementing anything it helps to look at the dataset. Since each pixel (of which there are 784) is a feature of
+                the data this is not possible to visualise without first performing principal component analysis (PCA) - this can be seen below.</p> 
+                
+                <figure>
+                    <img src="img/mnist/pca.png" class="img-mob center" alt="MNIST PCA Visualisation" height="600" width="600">
+                    <!-- <figcaption class="text-muted"></figcaption>Figure 1: MNIST PCA Visualisation</figcaption> -->
+                </figure>
+                
+                <h3>Perceptrons</h3>
+
+                <p>This visual helps to highlight the relative similarity between each class (digit) within the dataset. Understanding
+                    of a perceptron, a supervised binary classifier means we must focus on two classes from the dataset. The perceptron 
+                    learns via a threshold function (defined below), optimising the predicitive weights by using the difference between 
+                    predicted and absolute target values. The perceptron is capable of learning within a few iterations for classes 0 and 1.
+                </p>
+                
+                <p>
+                    $$ {\displaystyle f(\mathbf {x} )={\begin{cases} 1&{\text{if }}\ \mathbf {w} \cdot \mathbf {x}
+                    +b\geq0,\\-1&{\text{otherwise}}\end{cases}}} $$
+                </p>
+                <!-- <pre>
+                    <code class="python">
+                        print('hello, world')
+                        for i in range(0, 10):
+                            print(i)
+                    </code>
+                </pre> -->
+
+                <p>
+                    The figure below highlights that the weights havee learned to differentiate between two classes with the 'brighter' regions 
+                    corresponding to a higher likelihood of belonging to class '1'. A better way to visualise it would be to formulate the decision 
+                    boundary between the two classes in the same 2D PCA space as before (see graph below). This helps to highlight how a perceptron 
+                    works for a binary classification problem, but what about more complex features reliant on an equally more complex approximating 
+                    function? That is a job for multi-layer perceptrons.
+                </p>
+
+                <figure>
+                    <img src="img/mnist/slp-weights.png" class="img-mob center" alt="MNIST Perceptron Weight Visualisation" height="100" width="100">
+                    <!-- <figcaption class="text-muted"></figcaption>Figure 1: MNIST PCA Visualisation</figcaption> -->
+                </figure>
+
+                <figure>
+                    <img src="img/mnist/pca-decision.png" class="img-mob center" alt="MNIST PCA Decision Boundary" height="300" width="300">
+                    <!-- <figcaption class="text-muted"></figcaption>Figure 1: MNIST PCA Visualisation</figcaption> -->
+                </figure>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Elliott Loveridge 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- add after bootstrap.min.js -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.js"></script>
+    <!-- <script src="bootstrap-toc.js"></script> -->
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- latex math -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- code embed -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/highlight.min.js"></script>
+
+</body>
+
+</html>
