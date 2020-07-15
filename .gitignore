@@ -68,3 +68,6 @@ node_modules/
 .firebaserc
 .firebase
 firebase.json
+
+# Mac folder files
+.DS_STORE
