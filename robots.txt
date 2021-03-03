@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /files/
+Disallow: .gitignore
+Disallow: favicon.ico
+Disallow README.md
