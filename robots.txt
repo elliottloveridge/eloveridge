@@ -1,5 +1,5 @@
-User-agent: *
+User-agent: Googlebot
+User-agent: AdsBot-Google
 Disallow: /files/
-Disallow: .gitignore
+Disallow: README.md
 Disallow: favicon.ico
-Disallow README.md
